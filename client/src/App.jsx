@@ -1,8 +1,10 @@
+import Navbar from "./components/Navbar"
+
 function App() {
 
   return (
     <div>
-      Goodbye World
+      <Navbar />
     </div>
   )
 }

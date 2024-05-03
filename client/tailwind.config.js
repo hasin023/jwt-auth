@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+
 import daisyui from "daisyui"
-import typography from "@tailwindcss/typography"
 
 export default {
   content: [
@@ -10,16 +10,13 @@ export default {
   theme: {
     extend: {},
   },
+  plugins: [
+    daisyui,
+  ],
+
   daisyui: {
-    themes: [
-      "light",
-      "dark",
-      "cupcake",
-      "bumblebee",
-      "garden",
-      "dracula",
-    ],
-    darkTheme: "dracula",
+    themes: true,
+    darkTheme: "forest",
     base: true,
     styled: true,
     utils: true,
@@ -27,8 +24,5 @@ export default {
     logs: true,
     themeRoot: ":root",
   },
-  plugins: [
-    daisyui,
-    typography
-  ],
 }
+
